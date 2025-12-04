@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .input-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: rgb(255, 255, 255);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="ex9">
+    
+    <div id="content">
+        <h1>
+            Gestor de Tareas
+        </h1>
+        <p>
+            Esta es una aplicación simple de lista de tareas (TO DO List) que permite a los usuarios agregar y eliminar tareas. Las tareas se almacenan en el localStorage del navegador para que persistan entre sesiones.
+            
+        </p>
+        
+        <div class="card" style="margin-inline: auto;">
+            <h1>Lista de Tareas</h1>
+            <div class="input-button">
+
+                <input type="text" id="tarea" placeholder="Nueva tarea...">
+                <button id="agregar">Agregar</button>
+            </div>
+                <ul id="lista"></ul>
+
+        </div>
+        
+    </div>
+    
+    
+    <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+    <script src="todoList.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro con validación</title>
+ <link rel="stylesheet" href="styles.css" />
+    <style>
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body class="ex10">
+
+        <div id="content">
+        <h1>
+        </h1>
+        <p>
+            
+        </p>
+
+        <form id="registerForm" class="card" style="margin-inline: auto;">
+            <h2>Registro</h2>
+            <div class="form-container">
+    
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+        
+    </div>
+    
+    
+    <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+        <script src="registerForm.js"></script>
+</body>
+</html>

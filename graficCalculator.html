@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con interfaz gráfica</title>
+<link rel="stylesheet" href="styles.css" />
+    <style>
+           
+        .calculadora {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .display {
+            width: 100%;
+            height: 50px;
+            font-size: 1.5em;
+            text-align: right;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #e6eef8;
+            background: var(--bg);
+            font-size: 1.2rem;
+            
+        }
+        button {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="ex8">
+        <div id="content">
+        <h1>
+        Calculadora con Interfaz Gráfica
+        </h1>
+        <p>
+            Esta es una calculadora con una interfaz gráfica simple que permite al usuario realizar operaciones básicas como suma, resta, multiplicación y división.
+             
+        </p>
+
+        <div class="card" style="margin-inline: auto;">
+
+            <div class="Calculadora">
+                <input type="text" class="display" id="display" readonly>
+                <div>
+                    <button id="limpiar">C</button>
+                </div>
+                <div>
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button">/</button>
+                </div>
+                <div>
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">*</button>
+                </div> 
+                <div>  
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">-</button>
+                </div> 
+                <div>  
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button">=</button>
+                    <button class="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+    <script src="graficCalculator.js"></script>
+</body>
+</html>

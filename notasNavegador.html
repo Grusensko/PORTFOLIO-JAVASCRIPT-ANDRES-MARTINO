@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas en el Navegador</title>
+     <link rel="stylesheet" href="styles.css" />
+    <style>
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+                li {
+            background: rgb(255, 255, 255);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .actions{
+            display: flex;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="ex14">
+
+    <div id="content">
+        <h1>
+        </h1>
+        <p>
+            
+        </p>
+        
+        <div class="card" style="margin-inline: auto;">
+            <h1>Mis notas</h1>
+            <textarea id="nota" placeholder="Escribe tu nota aquí..."></textarea><br>
+            <div class="actions">
+                <button id="guardar">Guardar Nota</button>
+                <button id="borrar" class="clear-btn">Borrar Notas</button>
+
+            </div>
+            <ul id="listNotas"></ul>
+        </div>
+        
+    </div>
+    
+    
+    <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+    <script src="notasNavegador.js"></script>
+</body>
+</html>

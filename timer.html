@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro en pantalla</title>
+     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        #cronometro{
+            font-size: 4em;
+            letter-spacing: 4px;
+            transition: transform 0.25s ease, color 0.25s ease;
+        }
+        .actions{
+            display: flex;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Animación de pulso para el cronómetro */
+        .pulse {
+            animation: pulse 0.8s ease;
+            color: rgb(0, 200, 255);
+            transform: scale(1.08);
+            text-shadow: 0 0 10px rgb(149, 0, 255);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); color: rgb(0, 200, 255); text-shadow: none; }
+            50% { transform: scale(1.12); color: rgb(149, 0, 255); text-shadow: 0 0 12px rgb(149, 0, 255); }
+            100% { transform: scale(1); color: rgb(0, 200, 255); text-shadow: none; }
+        }
+    </style>
+</head>
+<body class="ex11">
+    <div id="content">
+        <h1>
+        Cronómetro en Pantalla
+        </h1>
+        <p>
+            Este es un cronómetro simple que permite al usuario iniciar, pausar y reiniciar el tiempo. El tiempo transcurrido se muestra en la pantalla con una animación de pulso para mejorar la experiencia visual.
+             
+        </p>
+        
+        <div class="card" style="margin-inline: auto; text-align: center;">
+
+        <h1>Cronómetro en pantalla</h1>
+        <div id="cronometro">00:00:00</div>
+        <div class="actions">
+            <button id="iniciar">Iniciar</button>
+            <button id="pausar">Pausar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>

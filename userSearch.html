@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de usuarios</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin:10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .input-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="ex13">
+    <div id="content">
+        <h1>
+        Buscador de usuarios de GitHub
+                   </h1>
+        <p>
+            Esta aplicación permite buscar usuarios de GitHub por su nombre de usuario. Al ingresar un nombre de usuario y hacer clic en "Buscar", se muestra información básica del usuario, como su avatar, nombre, número de repositorios y seguidores.
+             
+        </p>
+        <div class="card" style="margin-inline: auto;">
+
+            <h1>Buscador de usuarios de GitHub</h1>
+            <div class="input-button">
+                <input type="text" id="usuario" placeholder="Ingrese nombre de usuario de GitHub" />
+                <button id="buscar">Buscar</button>
+
+            </div>
+            <div id="resultado"></div>
+        </div>
+        
+    </div>
+    
+    
+    <div id="header"></div>
+    <div id="navMenu"></div>
+    <script async src="ux.js"></script>
+    <script src="userSearch.js" />
+</body>
+</html>
